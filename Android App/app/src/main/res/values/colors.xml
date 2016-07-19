@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cyan">#73C8A9</color>
+    <color name="gold">#E1B866</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#ee3a3a</color>
+    <color name="darkgray">#151515</color>
+    <color name="lightgray">#D8D8D8</color>
+    <color name="lightergray">#E6E6E6</color>
+    <color name="black">@android:color/black</color>
+    <color name="background">#F06226</color>
+    <color name="skyblue">#87CEFA</color>
+    <!--//#F06422-->
+    <color name="cellbackground">#F0F0F0</color>
+    <color name="semitransparent">#66232323</color>
+    <color name="darkergray">@android:color/black</color>
+    <color name="moresemitransparent">#99FFFFFF</color>
+    <color name="dialogBackGround">#99000000</color>
+    <color name="white">@android:color/white</color>
+    <color name="outerCircle">#b2b0b2</color>
+    <color name="eqsetingtxtcolor">#363636</color>
+</resources>

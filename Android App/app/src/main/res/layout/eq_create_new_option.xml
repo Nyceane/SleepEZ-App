@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_textview_height"
+    android:background="@drawable/textbox_selector">
+
+
+    <ImageView
+        android:id="@+id/animationImage"
+        android:layout_width="@dimen/heightOfImage"
+        android:layout_height="@dimen/heightOfImage"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fragment_textview_height"
+        android:layout_alignParentRight="true"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:id="@+id/image_option"
+            android:layout_width="@dimen/eQimageOptionsWidth"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:layout_toLeftOf="@+id/txtDelete"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text=">" />
+
+        <TextView
+            android:id="@+id/txtDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fragment_textview_height"
+            android:background="@color/background"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/delete"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_create_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_textview_height"
+        android:layout_toLeftOf="@+id/left"
+        android:layout_toRightOf="@+id/animationImage"
+        android:gravity="start|center_vertical"
+        android:text="@string/txt_createNew"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="@dimen/txt_size"
+        android:textStyle="bold"
+        android:textColor="@color/eqsetingtxtcolor"/>
+
+
+</RelativeLayout>

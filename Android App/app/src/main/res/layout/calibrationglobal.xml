@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <TextView
+        android:id="@+id/txtConnectMessage"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/autoCalimarginTop"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:text="@string/personalizemessgae"
+        android:textSize="@dimen/txtmainMessage"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtConnectMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/autoCalimarginTop"
+        android:layout_marginTop="@dimen/autoCalimarginTopLess">
+
+
+        <TextView
+            android:id="@+id/txthelp"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/help"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txtHelp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+
+        <FrameLayout
+            android:id="@+id/informationLayout"
+            android:layout_width="@dimen/whitecircle"
+            android:layout_height="@dimen/whitecircle"
+            android:layout_below="@+id/txthelp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/autoCalimarginTopLess"
+            android:background="@drawable/whitecircle">
+
+            <TextView
+                android:id="@+id/txtChangeMessage"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/start"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtCalibrating"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/informationLayout"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/calibrating"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txtConnecting"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtExtraHelp"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/extrahelp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txtBelowMessage"
+        android:visibility="gone" />
+</RelativeLayout>

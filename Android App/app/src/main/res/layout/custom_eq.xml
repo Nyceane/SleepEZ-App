@@ -1,0 +1,395 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jblcontroller.st.com.headphonecontroller.fragments.CustomEqFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/setting_name"
+                android:layout_width="240dp"
+                android:layout_height="@dimen/custom_eq_txtView_height"
+                android:layout_marginLeft="@dimen/custom_eq_edtText_margin_top"
+                android:layout_marginRight="@dimen/custom_eq_edtText_margin_top"
+                android:layout_marginTop="@dimen/custom_eq_edtText_margin_top"
+                android:hint="@string/hint"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/custom_eq_edtText_margin_left"
+                android:paddingRight="@dimen/custom_eq_edtText_margin_left"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColorHint="@color/lightgray"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <Button
+                android:id="@+id/save_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/custom_eq_txtView_height"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/custom_eq_edtText_margin_top"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="@string/save"
+                android:textColorHint="@color/lightgray"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/txt_high"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_name"
+                android:layout_marginLeft="@dimen/custom_eq_txtView_margin_left"
+                android:layout_marginTop="@dimen/custom_eq_edtText_margin_top"
+                android:padding="2dp"
+                android:text="@string/highView"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_high_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_high"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/khz_16"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_high_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/layout_high_1"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/khz_8"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_high_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/layout_high_2"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/khz_4"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_high_3"
+                android:layout_marginLeft="@dimen/custom_eq_txtView_margin_left"
+                android:layout_marginTop="@dimen/custom_eq_txtView_margin_top"
+                android:padding="2dp"
+                android:text="@string/eQ_mid"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_mid_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_mid"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/khz_2"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_mid_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_mid_1"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/khz_1"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_mid_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_mid_2"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/hz_500"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_mid_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_mid_3"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/hz_250"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+            <!-- LOW -->
+
+            <TextView
+                android:id="@+id/txt_low"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_mid_4"
+                android:layout_marginLeft="@dimen/custom_eq_txtView_margin_left"
+                android:layout_marginTop="@dimen/custom_eq_txtView_margin_top"
+                android:padding="2dp"
+                android:text="@string/lowView"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_low_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_low"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/hz_125"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_low_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_low_1"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/hz_64"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_low_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_eq_layout_height"
+                android:layout_below="@id/txt_low_2"
+                android:background="@drawable/text_normal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.15"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/hz_32"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.85"
+                    android:maxHeight="@dimen/seekbarMaxHeight"
+                    android:minHeight="@dimen/seekbarMaxHeight"
+                    android:progressDrawable="@drawable/eqsettingprogress"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/deleteEq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_low_3"
+                android:layout_marginTop="@dimen/custom_eq_delete_button_margin_top">
+
+                <TextView
+                    android:id="@+id/deletebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_eq_delete_button_height"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/custom_eq_txtView_margin_left"
+                    android:text="@string/deleteEqSetting"
+                    android:textAlignment="gravity"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

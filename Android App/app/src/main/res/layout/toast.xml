@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="@dimen/margin5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:layout_marginRight="@dimen/margin5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/TrueNote"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtHelp" />
+
+</LinearLayout>

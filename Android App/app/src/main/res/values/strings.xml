@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">SleepEZ</string>
+    <string name="app_name_headphone">SleepEZ Everest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sensitivity">noise level sensitivity</string>
+    <string name="low">low</string>
+    <string name="med">medium</string>
+    <string name="high">high</string>
+    <string name="save">save</string>
+    <string name="start_test">start test</string>
+    <string name="stop_test">stop test</string>
+    <string name="settings_saved">Settings saved</string>
+
+
+    <string name="plsConnect">Please connect \n headphones.</string>
+    <string name="or">or</string>
+    <string name="help">1. Put on headphones \n2. Push start button</string>
+    <string name="egsetting">Equalization</string>
+    <string name="egsettinghome">EQ SETTING</string>
+    <string name="start">Start</string>
+    <string name="done">Done!</string>
+    <!--<string name="TrueNote"><![CDATA[TruNote<sup><small>TM</small></sup>]]></string>-->
+    <string name="TrueNote">TruNote</string>
+    <!--<string name="autoComplete"><![CDATA[TruNote<sup><small>TM</small></sup>]]> \n Auto Calibration Complete</string>-->
+    <string name="autoComplete">TruNote \n Auto Calibration Complete</string>
+    <!--
+        <string name="personalizemessgae">Personalize your audio experience \n with <![CDATA[TruNote<sup><small>TM</small></sup>]]> Auto Calibration</string>
+    -->
+    <string name="personalizemessgae">Personalize your audio experience \n with TruNote Auto Calibration</string>
+    <string name="calibrating">Calibrating</string>
+    <string name="cancel">Cancel</string>
+    <string name="extrahelp">Calibrate headphones anytime in settings</string>
+
+
+    <string name="deviceName">Device Name</string>
+    <string name="deviceId">v1.0</string>
+    <string name="textSettings">SETTINGS</string>
+    <string name="settings">Settings</string>
+    <string name="text_autoCalibrate">Auto Calibrate</string>
+    <string name="text_updateDevice">Update Device</string>
+    <string name="text_updateFirmware">Update Firmware</string>
+    <string name="text_smartButton">Programmable Smart Button</string>
+    <string name="text_autoOff">Auto Off Feature</string>
+    <string name="text_voicePrompt">Enable Voice Prompt</string>
+    <string name="text_available_update_name">Available Update Name</string>
+    <string name="text_install_update">Install Version</string>
+    <string name="textUpdate">Updates</string>
+    <string name="textOptions">Options</string>
+    <string name="presets">PRESETS</string>
+    <string name="textHeader">CUSTOM</string>
+    <string name="ambientAware">Ambient Aware</string>
+    <string name="noiceCancelling">Noise Cancellation</string>
+    <string name="autoCalibration">TruNote Auto-Calibration</string>
+    <string name="text_on_off">on/off</string>
+    <string name="amibient">Use the smart button on your headphones \n to turn Ambient Awareness on and off.</string>
+    <string name="noicecancel">Use the smart button on your headphones \n to turn Noise Cancellation on and off.</string>
+
+    <string name="text_off">Off</string>
+    <string name="txt_vocal">Vocal</string>
+    <string name="txt_bass_boost">Bass</string>
+    <string name="txt_jazz">Jazz</string>
+    <string name="txt_createNew">Create New</string>
+
+    <!-- Custom EqSettings-->
+    <string name="eQ_mid">MID</string>
+    <string name="eqsetting_toolbar_right">edit</string>
+    <string name="cusomEq_toolbar_right_save">Save</string>
+    <string name="cusomEq_toolbar_right_addNew">Add New</string>
+    <string name="text_customEq">Custom EQ</string>
+    <string name="hint">Custom Name</string>
+
+    <!-- Circle Controller-->
+    <string name="highView">HIGH</string>
+    <string name="awareness">AWARENESS</string>
+    <string name="mediumView">MEDIUM</string>
+    <string name="lowView">LOW</string>
+    <string name="noise_cancel">NOISE CANCEL</string>
+    <string name="control_on">ON</string>
+    <string name="control_off">OFF</string>
+    <string name="tutorialText1Disabled">Noise cancelling is off.</string>
+    <string name="tutorialText2Disabled">Turn on noise\ncancellation</string>
+    <string name="tutorialText1Enabled">Noise cancelling is on.</string>
+    <string name="tutorialText2Enabled">Adjust ambient awareness\n using presets or sliders</string>
+
+    <!-- New Stering-->
+    <string name="rdm">Response Device Mock</string>
+    <string name="adm">Aware Device Mock</string>
+    <string name="pdm">Phoenix Device Mock</string>
+
+    <!-- 18/7/2015 -->
+    <string name="deleteEqSetting">Delete EQ Setting</string>
+    <string name="khz_16">16kHz</string>
+    <string name="khz_8">8kHz</string>
+    <string name="khz_4">4kHz</string>
+    <string name="khz_2">2kHz</string>
+    <string name="khz_1">1kHz</string>
+    <string name="hz_500">500Hz</string>
+    <string name="hz_250">250Hz</string>
+    <string name="hz_125">125Hz</string>
+    <string name="hz_64">64Hz</string>
+    <string name="hz_32">32Hz</string>
+    <string name="settingSmartOptions">OPTIONS</string>
+
+
+    <string name="delete">Delete</string>
+
+
+    <!-- String for dymanic messages -->
+    <string name="batterylowTitle">Battery low !</string>
+    <string name="batterylowMessage">Battery is low, Connect to charger.</string>
+    <string name="deletefail">Name already exists.</string>
+    <string name="noInternetConenction">Make sure you are connected to the internet.</string>
+    <string name="downlaodfailed">Download failed.</string>
+    <string name="faildeleting">Fail while deleting Preset.</string>
+    <string name="OK">OK</string>
+
+    <string name="plswait">Please wait while downloading...</string>
+    <string name="batteryalert">The battery level of your headphones needs to be above 50% to perform a firmware update or connect charger and restart update.</string>
+    <string name="failcalibration">Calibration failed. Try again</string>
+    <string name="failedtoenterinbootmode">Failed while trying to enter in bootMode!</string>
+    <string name="updating">Updating...</string>
+    <string name="erasing">Erasing...</string>
+    <string name="firmwareprompt">Firmware update is currently not available.</string>
+    <string name="IE_No_calbration">Your headphones don\'t support Calibration.</string>
+
+    <!-- Use in every translation -->
+    <string name="update_successful">Update successful!</string>
+    <string name="don_close_app">Please do not close the application.</string>
+    <string name="firmwareUpdating">Firmware is Updating.</string>
+    <string name="no_update_available">No updates are available.</string>
+    <string name="install_ver">Install version </string>
+    <string name="fwalert">To enable Over-The-Air upgrade, please connect Everest Headphone to a computer and go to www.jbl.com/app to do a USB upgrade for the very first time.</string>
+    <string name="exit">Exit</string>
+    <string name="taking_longer_time">Connecting with headphone is taking time. Please wait...</string>
+
+    <string name="timeout">Headphone is not responding because of slow phone, Please wait...</string>
+    <string name="spoiler">Supported headphones include: Everest Elite 100, Everest Elite 300,Everest Elite 700</string>
+    <string name="aware">Awareness</string>
+
+    <string name="AADAuthority">https://login.microsoftonline.com/common</string>
+    <string name="AADResourceId">https://outlook.office.com</string>
+    <string name="AADClientId">Paste your Client ID HERE</string>
+    <string name="AADRedirectUrl">Paste your Redirect URI HERE</string>
+
+</resources>
